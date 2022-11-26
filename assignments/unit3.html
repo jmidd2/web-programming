@@ -3,18 +3,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unit 2 Assignment</title>
+    <title>Unit 3 Assignment</title>
     <style>
       form {
         display: grid;
         width: 350px;
       }
 
-      form input, form select {
+      form.customer-info input, form.customer-info select {
         margin: 5px 0;
       }
 
-      form input.button {
+      form.customer-info input.button {
         margin: 0px !important;
       }
 
@@ -26,14 +26,60 @@
       .row .col {
         flex-grow: 1;
       }
+
+      .col label {
+        padding: 0;
+        width: 120px;
+        display: block;
+      }
+
+      form.order-info {
+        margin-bottom: 20px;
+        border-bottom: 1px black solid;
+        padding-bottom: 5px;
+      }
+
+      .order-info input {
+        width: 96%;
+      }
+
+      form.order-info .row.total {
+        margin: 15px 0;
+      }
+
+      #priceButton {
+        margin-bottom: 10px;
+      }
     </style>
   </head>
   <body>
-    <h1>Unit 2 Assignment</h1>
-    <p>Create a form with 10 fields/elements</p>
+    <h1>Unit 3 Assignment</h1>
+    <p>Modify Unit 2 assignment with a form to calculate a total.</p>
+    <p>First set the price of the items then enter a quantity to calculate the total</p>
     <hr />
-    <h2>Sign Up Form</h2>
-    <form>
+    <h2>Order Form</h2>
+    <form class="order-info">
+        <div class="row">
+            <div class="col">
+                <label for="priceText">Price:</label>
+            </div>
+            <div class="col">
+                <input type="text" id="priceText" />
+            </div>
+        </div>
+        <button type="button" id="priceButton" onclick="setPrice()">Set Price</button>
+        <div class="row">
+            <div class="col label">
+                <label for="quantityText">Quantity:</label>
+            </div>
+            <div class="col">
+                <input type="text" id="quantityText" />
+            </div>
+        </div>
+        <button id="calcButton" type="button" onclick="calcForm()">Calculate</button>
+        <div class="row total">Total Price @ $<span id="priceSpan">0.00</span>ea: $<span id="totalSpan">0.00</span></div>
+    </form>
+    <form class="customer-info">
       <label>First Name</label> <input type="text" />
       <label>Last Name</label> <input type="text" />
       <label>Email</label> <input type="email" />
@@ -100,5 +146,27 @@
         <div class="col"><input type="button" value="Clear" class="button" /></div>
       </div>
     </form>
+    <script type="text/javascript">
+        let price = 0.0;
+
+        function calcForm() {
+            if (price != 0) {
+                let quantity = parseFloat(document.getElementById("quantityText").value);
+                let total = quantity * price;
+                
+                document.getElementById("totalSpan").innerText = total.toFixed(2);
+            } else {
+                alert("Please set the price first.")
+            }
+        }
+
+        function setPrice() {
+            const priceSpan = document.getElementById("priceSpan");
+            const userPrice = parseFloat(document.getElementById("priceText").value);
+            price = userPrice;
+
+            priceSpan.innerText = price.toFixed(2);
+        }
+    </script>
   </body>
 </html>
