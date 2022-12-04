@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Unit 3 Assignment</title>
+    <title>Unit 4 Assignment</title>
     <style>
       form {
         display: grid;
@@ -50,11 +50,24 @@
       #priceButton {
         margin-bottom: 10px;
       }
+
+      #discount {
+        display: none;
+      }
+
+      #discount .is-applied {
+        display: block;
+      }
     </style>
   </head>
   <body>
-    <h1>Unit 3 Assignment</h1>
-    <p>Modify Unit 2 assignment with a form to calculate a total.</p>
+    <h1>Unit 4 Assignment</h1>
+    <p>Modify your form that you built in Unit 2 and enhanced in Unit 3 by adding in a part for a discount.</p>
+    <p>
+      For example, when the user clicks the button from Unit 3 to calculate the total then your JavaScript can check to see 
+      if the quantity is greater than a certain amount and if it is then reducing the cost of their order by a certain percent.  
+      This should be shown on the form so the customer can feel good about the discount and encourage them to order more.
+    </p>
     <p>First set the price of the items then enter a quantity to calculate the total</p>
     <hr />
     <h2>Order Form</h2>
@@ -78,6 +91,7 @@
         </div>
         <button id="calcButton" type="button" onclick="calcForm()">Calculate</button>
         <div class="row total">Total Price @ $<span id="priceSpan">0.00</span>ea: $<span id="totalSpan">0.00</span></div>
+        <div class="row" id="discount">20% Discount applied: $<span id="discountRate">0.00</span></div>
     </form>
     <form class="customer-info">
       <label>First Name</label> <input type="text" />
@@ -148,11 +162,24 @@
     </form>
     <script type="text/javascript">
         let price = 0.0;
+        let discountQuantity = 5;
+        let discountRate = 0.2;
 
         function calcForm() {
             if (price != 0) {
                 let quantity = parseFloat(document.getElementById("quantityText").value);
-                let total = quantity * price;
+                let total = 0;
+                let discount = 0;
+                if (quantity > discountQuantity) {
+                  total = quantity * price
+                  discount = total * discountRate;
+                  total -= discount;
+                  document.getElementById("discount").style.display = "block";
+                  document.getElementById("discountRate").innerText = discount.toFixed(2);
+                } else {
+                  total = quantity * price;
+                  document.getElementById("discount").style.display = "none";
+                }
                 
                 document.getElementById("totalSpan").innerText = total.toFixed(2);
             } else {
