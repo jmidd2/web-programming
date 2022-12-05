@@ -10289,3 +10289,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 .header .title, .header .subtitle {
   color: hsl(0deg, 0%, 100%);
 }
+
+.card.column {
+  flex: none !important;
+}
+
+.image {
+  line-height: 0px;
+}
+
+ol {
+  margin: 1rem 0 0 2rem;
+}

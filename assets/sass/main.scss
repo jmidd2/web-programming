@@ -10,3 +10,15 @@
         color: $white;
     }
 }
+
+.card.column {
+    flex: none !important;
+}
+
+.image {
+    line-height: 0px;
+}
+
+ol {
+    margin: 1rem 0 0 2rem;
+}
