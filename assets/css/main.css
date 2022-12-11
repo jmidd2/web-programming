@@ -10334,6 +10334,13 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 0.25rem;
 }
 
+.message-body .title a {
+  text-decoration: none !important;
+}
+.message-body .title a:hover {
+  text-decoration: underline !important;
+}
+
 .card.column {
   flex: none !important;
 }
