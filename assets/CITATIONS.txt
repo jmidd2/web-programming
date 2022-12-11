@@ -1,9 +1,16 @@
 Hogwarts Image: https://cdn1.epicgames.com/offer/e97659b501af4e3981d5430dad170911/EGS_HogwartsLegacy_AvalancheSoftware_S1_2560x1440-2baf3188eb3c1aa248bcc1af6a927b7e
 Hogwarts Text: https://store.steampowered.com/app/990080/Hogwarts_Legacy/
 Hogwarts Griffin: https://cdn.cloudflare.steamstatic.com/steam/apps/990080/ss_df93b5e8a183f7232d68be94ae78920a90de1443.1920x1080.jpg?t=1668268562
+Hogwarts Meta: https://www.metacritic.com/game/pc/hogwarts-legacy
+Hogwarts YouTube: https://www.youtube.com/@HogwartsLegacy
+
 KSP2 BG: https://cdn.mos.cms.futurecdn.net/qrvhq86fneoBW7NmTPKjbg.jpg
 KSP2 Text: https://store.steampowered.com/app/954850/Kerbal_Space_Program_2/
 KSP2 Rocket: https://cdn.akamai.steamstatic.com/steam/apps/954850/ss_d23311d7843305bd166d3f34b6942a70d3b49a65.600x338.jpg?t=1667233576
+KSP2 Meta: https://www.metacritic.com/game/pc/kerbal-space-program-2
+KSP2 YouTube: https://www.youtube.com/@KerbalSpaceProgramOfficial
+
 Starfield BG: https://images.ctfassets.net/rporu91m20dc/2IMhLJRi9ARJghPjHvN08W/87eb60d2e358c00377e4f13d466ce350/Starfield_LargeHero_Showcase.png
+https://bethesda.net/en/game/starfield
 Starfield Text: https://store.steampowered.com/app/1716740/Starfield/
 Starfield Field: https://cdn.akamai.steamstatic.com/steam/apps/1716740/ss_68ece84be2957de1ee782248ede09f30292ca087.600x338.jpg?t=1664820785
