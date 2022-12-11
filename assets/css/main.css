@@ -10326,3 +10326,15 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   margin-bottom: 0.5rem;
   margin-left: 1.5rem;
 }
+
+.card.column {
+  flex: none !important;
+}
+
+.image {
+  line-height: 0px;
+}
+
+ol {
+  margin: 1rem 0 0 2rem;
+}
