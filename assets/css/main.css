@@ -10288,18 +10288,20 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 .header.hogwarts {
   background-image: url("../images/Hogwarts_BG.jpg");
-  background-position-y: -240px;
-  background-position-x: center;
+  background-position-y: -125px;
 }
 .header.ksp {
   background-image: url("../images/KSP2_BG.jpg");
   background-position-y: -615px;
-  background-position-x: center;
 }
 .header.starfield {
   background-image: url("../images/Starfield_BG.png");
   background-position-y: -240px;
+}
+.header.starfield, .header.hogwarts, .header.ksp {
   background-position-x: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .header .title,
 .header .subtitle {
