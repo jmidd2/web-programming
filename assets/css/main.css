@@ -10286,6 +10286,43 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #159957;
   background-image: linear-gradient(120deg, #155799, #159957);
 }
-.header .title, .header .subtitle {
+.header.hogwarts {
+  background-image: url("../images/Hogwarts_BG.jpg");
+  background-position-y: -240px;
+  background-position-x: center;
+}
+.header.ksp {
+  background-image: url("../images/KSP2_BG.jpg");
+  background-position-y: -615px;
+  background-position-x: center;
+}
+.header.starfield {
+  background-image: url("../images/Starfield_BG.jpg");
+  background-position-y: -240px;
+  background-position-x: center;
+}
+.header .title,
+.header .subtitle {
   color: hsl(0deg, 0%, 100%);
+  filter: drop-shadow(1px 1px 2px black);
+}
+
+#content .container.tile {
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+#content .container.tile img {
+  width: 400px;
+  height: 225px;
+  box-shadow: 3px 3px 7px #606c71;
+}
+#content .container.tile .subtitle {
+  margin-bottom: 0.5rem;
+}
+#content .container.tile ul {
+  list-style-type: disc;
+}
+#content .container.tile ul li {
+  margin-bottom: 0.5rem;
+  margin-left: 1.5rem;
 }
