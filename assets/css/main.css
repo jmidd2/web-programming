@@ -10330,6 +10330,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 #content .container.tile article {
   margin-top: 1rem;
 }
+#content .container.tile .message-body p {
+  margin-bottom: 0.25rem;
+}
 
 .card.column {
   flex: none !important;

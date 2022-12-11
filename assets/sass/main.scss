@@ -57,6 +57,10 @@
     article {
         margin-top: 1rem;
     }
+
+    .message-body p {
+        margin-bottom: .25rem;
+    }
 }
 .card.column {
     flex: none !important;
