@@ -20,7 +20,7 @@
     }
 
     &.starfield {
-        background-image: url("../images/Starfield_BG.jpg");
+        background-image: url("../images/Starfield_BG.png");
         background-position-y: -240px;
         background-position-x: center;
     }
@@ -37,6 +37,7 @@
 
     img {
         width: 400px;
+        max-width: 400px;
         height: 225px;
         box-shadow: 3px 3px 7px $body-text-color;
     }

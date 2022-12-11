@@ -10297,7 +10297,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-position-x: center;
 }
 .header.starfield {
-  background-image: url("../images/Starfield_BG.jpg");
+  background-image: url("../images/Starfield_BG.png");
   background-position-y: -240px;
   background-position-x: center;
 }
@@ -10313,6 +10313,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 #content .container.tile img {
   width: 400px;
+  max-width: 400px;
   height: 225px;
   box-shadow: 3px 3px 7px #606c71;
 }
